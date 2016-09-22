@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eecc44"
+    android:orientation="vertical">
+    <!--android:layout_below="@id/actionbar_container"-->
+
+    <LinearLayout
+        android:id="@+id/headPhoto"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/paient_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+            android:text="gsf"
+            android:textColor="#434343"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/paient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:text="王往往"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tab_container"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_container"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/headPhoto"
+
+        android:background="#f0f0f0"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#434343" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/tab_detail_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/tab_container"
+
+        android:minHeight="80dp">
+
+    </FrameLayout>
+</RelativeLayout>

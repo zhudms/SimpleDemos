@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#666666</color>
+    <color name="text_lightgray">#b7b7b7</color>
+
+    <color name="app_white">#ffffff</color>
+    <color name="app_color">#B0E2FF</color>
+    <color name="app_gray">#c9c9c9</color>
+    <color name="app_pressed_gray">#cccaca</color>
+    <color name="app_back_gray">#EBEBEB</color>
+    <color name="app_divider_color">#F0F0F0</color>
+    <color name="app_line_color">#B8B8B8</color>
+
+
+    <!--<color name="app_blue">#0185fc</color>-->
+    <color name="app_btn_onclick">#009fb3</color>
+
+    <!--<color name="app_theme_color">#000000</color>-->
+    <!--<color name="app_theme_onselect">#0ff32c</color>-->
+    <!--<color name="app_newmessage_red">#0ff32c</color>-->
+    <color name="app_theme_onselect">#0380fc</color>
+
+    <!--text coler-->
+    <color name="app_text_black">#FF3E96</color>
+    <color name="app_text_darkgray">#333333</color>
+    <color name="app_text_lightgray">#666666</color>
+    <color name="app_unclickable_gray">#bbbbbb</color>
+    <color name="app_text_red">#f4372f</color>
+
+    <!--home-->
+    <color name="home_menu_textnormal">#b8b8b8</color>
+
+    <color name="hometab_back_normal">#191919</color>
+    <color name="hometab_back_onselect">@color/app_theme_onselect</color>
+
+    <!--actionbar-->
+    <color name="actionbar_textcolor">#cdcdcd</color>
+
+    <!--list_item-->
+    <color name="list_item_flodernumb">#909800</color>
+    <color name="list_back_gray">#ebebeb</color>
+    <color name="list_head_textgray">#555555</color>
+
+    <!--set-->
+    <color name="set_item_onpress">#cccaca</color>
+    <color name="set_item_textgray">#bbbbbb</color>
+
+    <color name="tab_xian">#DDDDDD</color>
+
+    <color name="app_black">#000000</color>
+
+    <color name="frag_paient_num">#FEB746</color>
+    <color name="light_green">#01B0FC</color>
+    <color name="light_yellow">#FEB746</color>
+    <color name="appcolor_dark">#009fb3</color>
+    <color name="search_tag_textcolor">#3493ea</color>
+</resources>

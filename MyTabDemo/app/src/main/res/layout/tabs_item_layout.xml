@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--TabFragment 中tabs_base_layout中的Item布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabs_item_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/hometab_back_selecter"
+    android:gravity="center_horizontal">
+
+<!--    android:paddingBottom="@dimen/tab_item_paddingtop"
+    android:paddingTop="@dimen/tab_item_paddingtop"-->
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tabs_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:visibility="gone"
+        tools:text="hahaha"
+        android:id="@+id/tabs_newmessage"
+        android:layout_width="@dimen/app_tab_noticesize"
+        android:layout_height="@dimen/app_tab_noticesize"
+
+        android:layout_alignRight="@id/tabs_image"
+        android:layout_alignTop="@id/tabs_image"
+    />
+
+    <TextView
+        android:id="@+id/image_text"
+        android:layout_below="@id/tabs_image"
+        android:layout_centerHorizontal="true"
+        tools:text="hahaha"
+        android:color="@drawable/text_selecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+<!--    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_white"
+        android:layout_below="@id/image_text"
+        android:layout_marginTop="@dimen/dimen_10"/>-->
+
+</RelativeLayout>

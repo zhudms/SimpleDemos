@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Patient</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="unknown">unknown</string>
+
+
+    <string name="message">消息</string>
+    <string name="create">创建</string>
+    <string name="change">修改</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+
+    <string name="newfloder">新建</string>
+
+
+    <string name="people">人</string>
+    <string name="bed">床</string>
+    <string name="send">发送</string>
+    <string name="net_error">网络链接错误,请检查网络状态</string>
+    <string name="get_error">获取失败</string>
+    <string name="without_net">无网络链接，使用本地数据</string>
+    <string name="net_disconnect">网络链接中断</string>
+    <!--<string name="no_user">获取用户信息失败，请登录后查看</string>-->
+    <string name="no_more">暂无更多</string>
+    <string name="del_success">删除成功</string>
+    <string name="add_success">添加成功</string>
+    <string name="del">删除</string>
+    <string name="finish">完成</string>
+    <string name="edit">编辑</string>
+    <string name="select_all">全选</string>
+    <!--<string name="cancle_push">取消发送</string>-->
+    <!--<string name="cancle_recall">取消撤回</string>-->
+    <string name="cancle_collect">取消收藏</string>
+    <string name="cancle_multi">取消多选</string>
+    <string name="forward">转发</string>
+    <!--<string name="login_first">请先登录</string>-->
+
+
+    <!--base-->
+    <string name="menu_homepage">首页</string>
+    <string name="menu_mymessage">我的消息</string>
+    <string name="menu_material">就诊资料</string>
+    <string name="menu_source">健康知识库</string>
+    <string name="menu_collection">我的收藏</string>
+    <string name="menu_set">设置</string>
+
+    <string-array name="menu_list">
+        <item>@string/menu_homepage</item>
+        <item>@string/menu_mymessage</item>
+        <item>@string/menu_material</item>
+        <item>@string/menu_source</item>
+        <item>@string/menu_collection</item>
+        <item>@string/menu_set</item>
+    </string-array>
+
+    <!--set-->
+    <string name="set_safe">通用与安全</string>
+    <string name="set_feedback">反馈</string>
+    <string name="set_about">关于</string>
+    <string name="set_help">帮助</string>
+
+    <string name="set_safe_protectpic">图案密码保护</string>
+    <string name="set_safe_protectclear">清除数据</string>
+
+
+    <string name="set_safe_del">删除图案保护</string>
+    <string name="set_safe_used">图案保护</string>
+    <string name="set_safe_forget">忘记密码(请联系护士进行密码重置)</string>
+    <string name="set_safe_draw">绘制密码保护图案</string>
+    <string name="set_safe_redraw">再次绘制图案进行确认</string>
+    <string name="set_safe_formerdraw">请绘制原密码保护图案</string>
+    <string name="set_safe_close">请绘制密码保护图案确认关闭密码保护</string>
+    <string name="set_safe_deldialog">关闭密码保护图案</string>
+    <string name="set_safe_deltip">密码保护功能将无法再发挥作用</string>
+
+    <!--feedback-->
+    <string name="feedback_title">标题：</string>
+    <string name="feedback_type">类型：</string>
+    <string name="feedback_message">内容：</string>
+    <string name="feedback_send">提交反馈</string>
+    <string name="feedback_control">操作类问题</string>
+    <string name="feedback_push">系统推送问题</string>
+    <string name="feedback_other">其他问题</string>
+
+    <array name="feedback_type_array">
+        <item>@string/feedback_control</item>
+        <item>@string/feedback_push</item>
+        <item>@string/feedback_other</item>
+    </array>
+
+    <string name="set_about_updata">软件更新</string>
+    <string name="set_about_uid">用户ID：</string>
+    <string name="set_about_area">病区：</string>
+    <string name="set_about_bedno">床位号：</string>
+    <string name="set_about_equipment">设备类型:</string>
+    <string name="set_about_equipmentno">设备编号:</string>
+    <string name="set_about_systemno">系统版本：</string>
+    <string name="set_about_softno">使用客户端：</string>
+
+
+    <string name="cost_kind">类别</string>
+    <string name="cost_name">项目名称</string>
+    <string name="cost_size">规格</string>
+    <string name="cost_unit">单位</string>
+    <string name="cost_price">单价</string>
+    <string name="cost_numb">数量</string>
+    <string name="cost_sum">金额</string>
+
+    <string name="check_res_title_default">检查报告</string>
+    <string name="check_res_title_name_des">患者姓名：</string>
+    <string name="check_res_title_sex_des">性别：</string>
+    <string name="check_res_title_age_des">年龄：</string>
+    <string name="check_res_title_apply_lib_des">申请科室：</string>
+    <string name="check_res_title_checktime_des">检查日期：</string>
+    <string name="check_res_title_check_point_des">检查部位：</string>
+    <string name="check_res_title_check_res_des">检查结论：</string>
+    <string name="check_res_title_check_video_des">影像所见：</string>
+
+    <string name="medical_data_all_datas">全部资料</string>
+    <string name="message_important_tips">重要提醒</string>
+    <string name="empty">暂无数据</string>
+
+    <string name="home_fragment_des">25日手术，请通知家属24日来院签署《手术同意书》</string>
+    <string name="home_fragment_inTime">入院时间：2016年3月20日</string>
+    <string name="home_fragment_inNum">住院号：R938493</string>
+    <string name="home_fragment_inNum_default">23</string>
+    <string name="home_fragment_name_default">王芬</string>
+    <string name="home_fragment_location_default">内科二区</string>
+    <string name="home_fragment_jinshi">进食</string>
+    <string name="home_fragment_update">如果以上的信息错误，请联系护士更新</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="get_detail_error">获取详情失败</string>
+    <string name="get_list_error">获取列表失败</string>
+    <string name="medical_cost_detail">费用明细清单</string>
+    <string name="medical_inspect_no">检验单号</string>
+    <string name="medical_inspect_name">检验项目</string>
+    <string name="medical_inspect_result">结果</string>
+    <string name="medical_inspect_unit">单位</string>
+    <string name="medical_inspect_reference">参考值</string>
+    <string name="medical_check">检查</string>
+    <string name="medical_inspect">检验</string>
+    <string name="medical_cost">消费清单</string>
+    <string name="medical_all">全部资料</string>
+    <string name="enter_search_tag">请输入您想搜索的内容</string>
+    <string name="all">全部</string>
+    <string name="search">搜索</string>
+    <string name="bed_process">bed_process</string>
+    <string name="get_macid_error">获取设备唯一标示失败</string>
+    <string name="get_macinfo_error">获取设备信息失败</string>
+    <string name="get_patient_error">获取患者信息失败</string>
+
+    <string name="password_hint">请输入密码</string>
+    <string name="sure">确定</string>
+    <string name="gesture_wrong">手势密码错误，请重新输入</string>
+
+    <string name="comfirm_onbtn">确定</string>
+    <string name="set_ip">请输入IP:</string>
+    <string name="ip_error">您所输入的IP无效</string>
+    <string name="set_safe_setip">设置IP</string>
+    <string name="can_not_find_version_name">获取应用版本号失败</string>
+    <string name="get_user_error">获取用户信息失败</string>
+    <string name="source_getfloder_error">获取资源根目录失败</string>
+</resources>

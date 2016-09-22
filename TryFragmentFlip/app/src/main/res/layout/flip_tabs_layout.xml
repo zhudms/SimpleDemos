@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <zxyilian.tryfragmentflip.TitleIndicator
+        android:id="@+id/pagerindicator"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:paddingTop="1dp"
+        app:footerColor="#C1FFC1"
+        app:footerLineHeight="2.5dp"
+        app:footerTriangleHeight="3.0dp"
+        app:textColor="#9F79EE"
+        app:textSizeNormal="20sp"
+        app:textSizeSelected="40sp" />
+
+    <!-- Don't set background for ViewPager. It doesn't work because of page margin -->
+
+    <zxyilian.tryfragmentflip.ViewPagerCompat
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

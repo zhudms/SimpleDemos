@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_home" type="id"></item>
+    <item name="menu_message" type="id"></item>
+    <item name="menu_visit" type="id"></item>
+    <item name="menu_source" type="id"></item>
+    <item name="menu_collection" type="id"></item>
+    <item name="menu_set" type="id"></item>
+
+
+    <item name="tab_zero" type="id"></item>
+    <item name="tab_first" type="id"></item>
+    <item name="tab_second" type="id"></item>
+    <item name="tab_third" type="id"></item>
+    <item name="tab_fourth" type="id"></item>
+    <item name="tab_fifth" type="id"></item>
+    <item name="tab_sixth" type="id"></item>
+    <item name="tab_seventh" type="id"></item>
+    <item name="tab_eighth" type="id"></item>
+
+    <!--<integer-array name="tab_ids">-->
+        <!--<item>1</item>-->
+        <!--<item>2</item>-->
+        <!--<item>3</item>-->
+        <!--<item>@+id/tab_fourth</item>-->
+        <!--<item>@+id/tab_fifth</item>-->
+        <!--<item>tab_sixth</item>-->
+        <!--<item>@id/tab_seventh</item>-->
+        <!--<item>@id/tab_eighth</item>-->
+    <!--</integer-array>-->
+</resources>

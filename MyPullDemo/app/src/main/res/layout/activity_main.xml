@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.demo.zxyl.myapplication.MainActivity">
+
+    <com.demo.zxyl.myapplication.PullToRefreshLayout
+android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/refresh_head" />
+
+        <com.demo.zxyl.myapplication.PullableListView
+            android:layout_width="match_parent"
+            android:id="@+id/content_view"
+            android:layout_height="match_parent"
+            android:background="#656432">
+
+
+        </com.demo.zxyl.myapplication.PullableListView>
+
+        <include layout="@layout/load_more" />
+    </com.demo.zxyl.myapplication.PullToRefreshLayout>
+</RelativeLayout>

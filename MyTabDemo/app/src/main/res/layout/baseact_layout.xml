@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#232323"
+        android:orientation="horizontal"></LinearLayout>
+    <!--android:background="@color/app_theme_onselect"-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/actionbar_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/actionbar_hight"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/app_black"-->
+        <!--android:orientation="horizontal"></LinearLayout>-->
+
+    <!--<ViewStub  android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <FrameLayout
+            android:id="@+id/menu_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/menu_container"
+            android:layout_alignParentLeft="true"
+     >
+            <!--android:layout_below="@id/actionbar_container"-->
+
+        </FrameLayout>
+    <!--</ViewStub>-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/base_list_container"-->
+    <!--android:layout_width="@dimen/list_with"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@id/menu_container"-->
+    <!--android:layout_below="@id/actionbar_container"-->
+    <!--android:layout_toRightOf="@id/tab_container"-->
+    <!--android:background="#97FFFF">-->
+    <!--</FrameLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/base_listdetail_container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@id/menu_container"-->
+    <!--android:layout_below="@id/actionbar_container"-->
+    <!--android:layout_toRightOf="@id/base_list_container"-->
+    <!--android:background="#EE0000"></FrameLayout>-->
+
+    <!--<meger-->
+    <!--android:id="@+id/base_container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@id/menu_container"-->
+    <!--android:layout_below="@id/actionbar_container"-->
+    <!--android:layout_toRightOf="@id/tab_container"-->
+    <!--android:background="#7CFC00"></meger>-->
+
+</RelativeLayout>

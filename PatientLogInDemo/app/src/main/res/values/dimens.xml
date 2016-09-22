@@ -1,0 +1,196 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="page_padding">0dp</dimen>
+    <dimen name="drawable_radio">5dp</dimen>
+    <dimen name="drawable_radio_max">1024dp</dimen>
+
+
+    <dimen name="app_min">1dp</dimen>
+
+
+    <!--text size-->
+    <dimen name="text_big">18sp</dimen>
+    <!--actionbar text size-->
+    <dimen name="text_normal">15sp</dimen>
+    <dimen name="text_small">10sp</dimen>
+    <!--<dimen name="text_small">12.5dp</dimen>-->
+
+    <!--new message size-->
+    <dimen name="app_tab_noticesize">5dp</dimen>
+    <dimen name="app_menu_noticesize">11dp</dimen>
+
+    <!--menu-->
+    <dimen name="home_menu_hight">50dp</dimen>
+    <dimen name="home_menu_newmessage">7dp</dimen>
+    <dimen name="home_item_pic_hight">24dp</dimen>
+    <dimen name="home_item_pic_with">24dp</dimen>
+    <dimen name="home_item_pic_margin">5dp</dimen>
+
+    <!--tab-->
+    <dimen name="tab_with">65dp</dimen>
+    <dimen name="tab_item_picwith">50dp</dimen>
+    <dimen name="tab_item_pichight">50dp</dimen>
+    <dimen name="tab_item_paddingtop">15dp</dimen>
+
+
+    <!--actionbar-->
+    <dimen name="actionbar_hight">40dp</dimen>
+    <dimen name="actionbar_icon_size">24dp</dimen>
+    <dimen name="actionbar_padding_left">15dp</dimen>
+    <dimen name="actionbar_margin_left">10dp</dimen>
+
+    <dimen name="actionbar_back_with">12dp</dimen>
+    <dimen name="actionbar_back_height">22dp</dimen>
+
+    <!--list-->
+    <dimen name="list_with">280dp</dimen>
+
+    <dimen name="list_arrow_with">2dp</dimen>
+    <dimen name="list_arrow_height">4dp</dimen>
+    <dimen name="list_arrowmargin_left">4dp</dimen>
+    <dimen name="list_arrowmargin_right">4dp</dimen>
+
+    <dimen name="list_item_icon">50dp</dimen>
+    <dimen name="list_item_iconrelative">52dp</dimen>
+    <dimen name="list_item_collection">16dp</dimen>
+
+    <dimen name="list_title_height">25dp</dimen>
+    <dimen name="list_item_height">61dp</dimen>
+    <dimen name="list_item_iconsize">40dp</dimen>
+    <dimen name="list_item_flodermargin">5dp</dimen>
+    <dimen name="list_item_iconmargin">10dp</dimen>
+    <dimen name="list_item_messagemargin">10dp</dimen>
+    <dimen name="list_item_paddingleft">12dp</dimen>
+    <dimen name="list_item_paddingright">13.5dp</dimen>
+
+    <dimen name="list_item_flodernumbwith">37dp</dimen>
+    <dimen name="list_item_flodernumbheight">17dp</dimen>
+
+
+    <dimen name="list_item_titlesize">12sp</dimen>
+    <dimen name="list_item_messagesize">9sp</dimen>
+    <dimen name="list_item_timesize">10sp</dimen>
+
+
+    <dimen name="list_head_textsize">12sp</dimen>
+    <dimen name="list_head_height">35dp</dimen>
+
+
+    <dimen name="list_send_itempadding">31dp</dimen>
+    <dimen name="list_send_messagepaddingtop">20dp</dimen>
+    <dimen name="list_send_messagepaddingleft">22dp</dimen>
+    <dimen name="list_send_messagesize">12sp</dimen>
+    <dimen name="list_send_messageheadsize">40dp</dimen>
+    <dimen name="list_send_messageheadmargin">10sp</dimen>
+
+
+    <dimen name="list_top_height">35dp</dimen>
+
+    <!--set-->
+    <dimen name="set_item_height">55dp</dimen>
+    <dimen name="set_paddingleft">80dp</dimen>
+    <dimen name="set_paddingtop">25dp</dimen>
+    <dimen name="set_card_paddingleft">25dp</dimen>
+    <dimen name="set_card_margintop">5dp</dimen>
+    <dimen name="set_card_itemheight">75dp</dimen>
+    <dimen name="set_icon_marginleft">20dp</dimen>
+    <dimen name="set_icon_marginright">30dp</dimen>
+    <dimen name="set_icon_size">34dp</dimen>
+    <dimen name="set_divider_hor">25dp</dimen>
+    <dimen name="set_divider_ver">15dp</dimen>
+
+    <dimen name="set_safe_pageleft">105dp</dimen>
+    <dimen name="set_safe_paddingleft">125dp</dimen>
+    <dimen name="set_safe_messagepadding">20dp</dimen>
+
+
+    <!--feedback-->
+    <dimen name="feedback_itemheight">40dp</dimen>
+    <dimen name="feedback_itemmargin">30dp</dimen>
+
+
+    <!--gesture-->
+    <dimen name="gesture_margin">30dp</dimen>
+
+
+    <!--cost-->
+    <dimen name="cost_item_pagepadding">30dp</dimen>
+    <dimen name="cost_item_padding">15dp</dimen>
+    <dimen name="max_radio_size">1024dp</dimen>
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+
+
+    <!--<dimen name="text_large">17sp</dimen>-->
+    <!--<dimen name="text_normal">15sp</dimen>-->
+    <!--<dimen name="text_small">12.5dp</dimen>-->
+
+    <!--<dimen name="app_tab_size">5dp</dimen>-->
+
+    <!--<dimen name="home_menu_hight">50dp</dimen>-->
+    <!--<dimen name="home_item_pic_hight">20dp</dimen>-->
+    <!--<dimen name="home_item_textsize">20dp</dimen>-->
+    <!--<dimen name="home_item_noticeheight">10dp</dimen>-->
+
+    <!--<dimen name="tab_with">40.3dp</dimen>-->
+    <!--<dimen name="tab_item_picwith">33.3dp</dimen>-->
+    <!--<dimen name="tab_item_pichight">33.3dp</dimen>-->
+
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+
+
+    <dimen name="size_36">36sp</dimen>
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="size_24">24sp</dimen>
+    <dimen name="size_120">120sp</dimen>
+    <dimen name="size_60">60sp</dimen>
+    <dimen name="size_50">50sp</dimen>
+    <dimen name="size_40">40sp</dimen>
+    <dimen name="size_18">18sp</dimen>
+    <dimen name="size_48">48sp</dimen>
+
+    <dimen name="check_result_title_margainTop">36dp</dimen>
+    <dimen name="check_result_tab_margainTop">22dp</dimen>
+    <dimen name="check_result_tab_margainLeft">33dp</dimen>
+
+    <dimen name="home_frag_margaintop">60dp</dimen>
+    <dimen name="home_frag_paientNum">120dp</dimen>
+    <dimen name="dimen_47">47dp</dimen>
+    <dimen name="dimen_112">142dp</dimen>
+    <dimen name="dimen_161">161dp</dimen>
+    <dimen name="source_detail_iconright">8dp</dimen>
+    <dimen name="medical_inspect_itemheight">14dp</dimen>
+    <dimen name="source_title_paddingleft">20dp</dimen>
+    <dimen name="source_search_linearheight">50dp</dimen>
+    <dimen name="source_title_paddingtop">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="set_gestbutton_height">40dp</dimen>
+    <dimen name="set_gest_padding">20dp</dimen>
+    <dimen name="set_gestbutton_margin">10dp</dimen>
+    <dimen name="setip_dialog_width">578dp</dimen>
+    <dimen name="setip_dialog_height">220dp</dimen>
+    <dimen name="setip_titleheight">76dp</dimen>
+    <dimen name="setip_editheight">60dp</dimen>
+    <dimen name="ipchange_dialog_buttonheight">85dp</dimen>
+    <dimen name="setip_button_paddingright">48dp</dimen>
+    <dimen name="text_button">15sp</dimen>
+    <dimen name="search_item_padding">15dp</dimen>
+    <dimen name="search_more_height">55dp</dimen>
+    <dimen name="medical_cost_itemheight">26dp</dimen>
+    <dimen name="search_title_height">45dp</dimen>
+    <dimen name="search_item_height">85dp</dimen>
+    <dimen name="search_item_margin">10dp</dimen>
+    <dimen name="search_text_paddingleft">5dp</dimen>
+
+</resources>

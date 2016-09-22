@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="@dimen/setip_dialog_width"
+    android:minWidth="@dimen/setip_dialog_width"
+    android:layout_height="@dimen/setip_dialog_height"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+    <!--android:minHeight="175dp"-->
+    <TextView
+        android:id="@+id/ipchange_dialog_title"
+        style="@style/text_big"
+        android:layout_height="@dimen/setip_titleheight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:text="dfsafd" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/dialog_message"-->
+    <!--style="@style/text_small_black"-->
+    <!--android:paddingLeft="@dimen/app_pagepadding"-->
+    <!--android:paddingRight="@dimen/app_pagepadding"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginBottom="@dimen/dialog_text_margin"-->
+    <!--android:gravity="left"-->
+    <!--tools:text="删除" />-->
+
+    <TextView style="@style/divider" />
+
+    <EditText
+        android:id="@+id/ipchange_dialog_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setip_editheight"
+        android:background="@null" />
+
+    <TextView style="@style/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ipchange_dialog_buttonheight"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/setip_button_paddingright">
+
+        <Button
+            android:id="@+id/ipchange_dialog_cancel"
+            style="@style/button_style"
+            android:text="@string/cancel" />
+
+
+        <Button
+            android:id="@+id/ipchange_dialog_confirm"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:text="@string/confirm" />
+
+
+    </LinearLayout>
+</LinearLayout>
