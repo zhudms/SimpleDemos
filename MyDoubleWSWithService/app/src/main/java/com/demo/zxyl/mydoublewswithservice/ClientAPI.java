@@ -12,6 +12,7 @@ public class ClientAPI {
     public static String BASE_HTTP = "http://" + BASE_URL + "/";
     public static String BASE_WS = "ws://" + BASE_URL + "/message/" + MyApplaction.getmPatientId() + "/" + MyApplaction.getmPatientId();
 
-    public static String WS_SERVICE_BED = "http://" + BASE_URL + "/";
+//    public static String WS_SERVICE_BED = "http://" + BASE_URL + "/";
     public static String WS_SERVICE_PATIENT = "http://" + BASE_URL + "/";
+    public static String WS_SERVICE_BED ="";
 }

@@ -19,8 +19,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Intent intent = new Intent(MainActivity.this, MyBedService.class);
         startService(intent);
-        Intent intent2 = new Intent(MainActivity.this, MyPatientService.class);
-        startService(intent2);
+//        Intent intent2 = new Intent(MainActivity.this, MyPatientService.class);
+//        startService(intent2);
 
 
     }

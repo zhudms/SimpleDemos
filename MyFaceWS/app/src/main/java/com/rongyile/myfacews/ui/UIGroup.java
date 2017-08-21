@@ -9,8 +9,12 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.rongyile.myfacews.MainActivity;
 
@@ -31,7 +35,7 @@ public class UIGroup extends RelativeLayout {
     private int mHeigth;
     private int spiderwidth = 30;
     private int showNumb = 0;//当前界面显示多少个view
-    private int childWidth=400;//每个子项的宽度
+    private int childWidth = 400;//每个子项的宽度
     private List<Integer> childX = new ArrayList<>();
 
 
@@ -57,9 +61,10 @@ public class UIGroup extends RelativeLayout {
         int shownNumb = getShownChildNumb();
         if (shownNumb <= 0) {
             return;
+
         }
 //        childWidth = mWidth/(shownNumb + 1);
-        spiderwidth =( mWidth-shownNumb*childWidth) / (shownNumb + 1);
+        spiderwidth = (mWidth - shownNumb * childWidth) / (shownNumb + 1);
         Integer left = 0;
         childX.clear();
         for (int i = 0; i < shownNumb; i++) {
@@ -113,28 +118,100 @@ public class UIGroup extends RelativeLayout {
 
 
     }
+//
+//    public void addFaces(Bitmap bitmap) {
+//        faceLists.add(bitmap);
+//        UIChild child = (UIChild) getUnShownView();
+//        if (child != null) {
+//            child.setmBitmap(bitmap);
+//            startShow(child);
+//        } else {
+//            faceLists.add(bitmap);
+//        }
+//
+//    }
 
-    public void addFaces(Bitmap bitmap) {
-        faceLists.add(bitmap);
-        UIChild child = (UIChild) getUnShownView();
-        if (child != null) {
-            child.setmBitmap(bitmap);
-            startShow(child);
-        } else {
-            faceLists.add(bitmap);
-        }
+    public void startShow( UIChild child) {
+//        boolean isMore = false;
 
-    }
+//        if (getShownChildNumb() >= maxShown) {
+//            child.setVisibility(GONE);
+////            isMore = true;
+//        }
+//
+//        child.setBackgroundColor(Color.GREEN);
+//        if (getChildCount() > 0) {
+//            TranslateAnimation animation;
+//            View view;
+//            int i;
+//            for (i = 0; i < getChildCount() - 1; i++) {
+//                Log.d(TAG, "startShow: i=" + i);
+//                view = getChildAt(i);
+//                animation = getTranslateAnimation(view);
+//                view.startAnimation(animation);
+//            }
+//            Log.d(TAG, "startShow: i=" + i);
+//            view = getChildAt(i);
+//            AlphaAnimation alphaAnimation = getAlphaAnimation(view);
+//            alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
+//                @Override
+//                public void onAnimationStart(Animation animation) {
+//
+//                }
+//
+//                @Override
+//                public void onAnimationEnd(Animation animation) {
+//                    Toast.makeText(mContext, "onAnimationStart: onAnimaition end", Toast.LENGTH_SHORT).show();
+//                    final LayoutParams paramers = new LayoutParams(300, 300);
+//                    addView(child, paramers);
+////                    removeViewAt(0);
+//                    invalidate();
+//                }
+//
+//                @Override
+//                public void onAnimationRepeat(Animation animation) {
+//
+//                }
+//            });
+////            view.startAnimation(alphaAnimation);
 
-    public void startShow(UIChild child) {
-//        child.setVisibility(View.VISIBLE);
-LayoutParams paramers=new LayoutParams(300,300);
-        if (getShownChildNumb()>=maxShown){
-            child.setVisibility(GONE);
-        }
-        child.setBackgroundColor(Color.GREEN);
-        addView(child,paramers);
-        invalidate();
+
+//            TranslateAnimation animation = new TranslateAnimation();
+//            animation.setDuration(1000);
+//
+//            animation.setAnimationListener(new Animation.AnimationListener() {
+//                @Override
+//                public void onAnimationStart(Animation animation) {
+//                    Toast.makeText(mContext, "onAnimationStart: onAnimaition Start", Toast.LENGTH_SHORT).show();
+////                    Log.d(TAG, "onAnimationStart: onAnimaition Start");
+//                }
+//
+//                @Override
+//                public void onAnimationEnd(Animation animation) {
+//                    Toast.makeText(mContext, "onAnimationStart: onAnimaition end", Toast.LENGTH_SHORT).show();
+//                    final LayoutParams paramers = new LayoutParams(300, 300);
+//                    addView(child, paramers);
+//                    invalidate();
+//
+//                }
+//
+//                @Override
+//                public void onAnimationRepeat(Animation animation) {
+//
+//                }
+//            });
+//            for (int i = 0; i < getChildCount(); i++) {
+//                getChildAt(i).startAnimation(animation);
+//
+//            }
+
+
+//        } else {
+            addView(child);
+//            invalidate();
+//            AlphaAnimation alphaAnimation = getAlphaAnimation(child);
+//            alphaAnimation.start();
+//        }
 
 
 //        TextView t = new TextView(mContext);
@@ -148,6 +225,42 @@ LayoutParams paramers=new LayoutParams(300,300);
 //        invalidate();
 
 //        notify();
+    }
+
+    private TranslateAnimation getTranslateAnimation(final View child) {
+
+        float x = child.getX();
+        float y = child.getY();
+
+        TranslateAnimation animation = new TranslateAnimation(x, -(childWidth + spiderwidth), y, y);
+        animation.setDuration(1000);
+
+        return animation;
+
+    }
+
+    private AlphaAnimation getAlphaAnimation(final View child) {
+        AlphaAnimation animation = new AlphaAnimation(0f, 1f);
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                final LayoutParams paramers = new LayoutParams(300, 300);
+                addView(child, paramers);
+                invalidate();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        return animation;
+
     }
 
     public int getShownChildNumb() {
