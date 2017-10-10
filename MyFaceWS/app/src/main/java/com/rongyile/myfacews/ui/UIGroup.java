@@ -83,8 +83,8 @@ public class UIGroup extends RelativeLayout {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
-        View childView;
 
+        View childView;
 
         int shownNumb = getShownChildNumb();
         if (shownNumb <= 0) {
@@ -93,19 +93,10 @@ public class UIGroup extends RelativeLayout {
 
             final int count = getChildCount();
 
-//        for (int i = 0; i < count; i++) {
-//            View child = getChildAt(i);
-//            if (child.getVisibility() != GONE) {
-//                RelativeLayout.LayoutParams st =
-//                        (RelativeLayout.LayoutParams) child.getLayoutParams();
-//                child.layout(st.mLeft, st.mTop, st.mRight, st.mBottom);
-//            }
-//        }
             for (int i = 0; i < count; i++) {
                 childView = getChildAt(i);
-                if (childView.getVisibility() != GONE) {
+                if (childView.getVisibility() == VISIBLE) {
                     int left = childX.get(i);
-//            int top = (getMeasuredHeight() - mHeigth) / 2;
                     int top = 0;
                     int right = left + childWidth;
                     int bottom = top + mHeigth;
@@ -132,48 +123,48 @@ public class UIGroup extends RelativeLayout {
 //    }
 
     public void startShow( UIChild child) {
-//        boolean isMore = false;
+        boolean isMore = false;
 
-//        if (getShownChildNumb() >= maxShown) {
-//            child.setVisibility(GONE);
-////            isMore = true;
-//        }
+        if (getShownChildNumb() >= maxShown) {
+            child.setVisibility(INVISIBLE);
+            isMore = true;
+        }
 //
-//        child.setBackgroundColor(Color.GREEN);
-//        if (getChildCount() > 0) {
-//            TranslateAnimation animation;
-//            View view;
-//            int i;
-//            for (i = 0; i < getChildCount() - 1; i++) {
-//                Log.d(TAG, "startShow: i=" + i);
-//                view = getChildAt(i);
-//                animation = getTranslateAnimation(view);
-//                view.startAnimation(animation);
-//            }
-//            Log.d(TAG, "startShow: i=" + i);
-//            view = getChildAt(i);
-//            AlphaAnimation alphaAnimation = getAlphaAnimation(view);
-//            alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
-//                @Override
-//                public void onAnimationStart(Animation animation) {
-//
-//                }
-//
-//                @Override
-//                public void onAnimationEnd(Animation animation) {
-//                    Toast.makeText(mContext, "onAnimationStart: onAnimaition end", Toast.LENGTH_SHORT).show();
-//                    final LayoutParams paramers = new LayoutParams(300, 300);
-//                    addView(child, paramers);
-////                    removeViewAt(0);
-//                    invalidate();
-//                }
-//
-//                @Override
-//                public void onAnimationRepeat(Animation animation) {
-//
-//                }
-//            });
-////            view.startAnimation(alphaAnimation);
+        child.setBackgroundColor(Color.GREEN);
+        if (getChildCount() > 0) {
+            TranslateAnimation animation;
+            View view;
+            int i;
+            for (i = 0; i < getChildCount() - 1; i++) {
+                Log.d(TAG, "startShow: i=" + i);
+                view = getChildAt(i);
+                animation = getTranslateAnimation(view);
+                view.startAnimation(animation);
+            }
+            Log.d(TAG, "startShow: i=" + i);
+            view = getChildAt(i);
+            AlphaAnimation alphaAnimation = getAlphaAnimation(view);
+            alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart(Animation animation) {
+
+                }
+
+                @Override
+                public void onAnimationEnd(Animation animation) {
+                    Toast.makeText(mContext, "onAnimationStart: onAnimaition end", Toast.LENGTH_SHORT).show();
+                    final LayoutParams paramers = new LayoutParams(300, 300);
+                    addView(child, paramers);
+//                    removeViewAt(0);
+                    invalidate();
+                }
+
+                @Override
+                public void onAnimationRepeat(Animation animation) {
+
+                }
+            });
+//            view.startAnimation(alphaAnimation);
 
 
 //            TranslateAnimation animation = new TranslateAnimation();
